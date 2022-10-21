@@ -1,0 +1,11 @@
+{
+    "version": "7.4.3",
+    "channel": "release",
+    "repositories": [
+        {
+            "url": "http:\/\/blockland.online\/api\/v1\/addons\/repository",
+            "format": "JSON",
+            "id": 39
+        }
+    ]
+}

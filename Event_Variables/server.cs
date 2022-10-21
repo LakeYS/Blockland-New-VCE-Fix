@@ -241,6 +241,10 @@ function VCE_initServer()
 	VCE_updateSaveFile();
 }
 //---
+// Support
+//---
+exec("./server/Support_DynamicObjectMethods.cs");
+//---
 // Package
 //---
 exec("./server/package.cs");

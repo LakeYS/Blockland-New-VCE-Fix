@@ -159,30 +159,29 @@ function SimObject::VCECallEvent(%obj, %outputEvent, %brick, %client,%player,%ve
 	{
 		//call the event correctly with the right number of paramter
 		//for some reason some events have error detection for the wrong number of paramters
-		//we could use eval but i'd rather not be compiling code during runtime
 		if(%parCount == 0)
-				%obj.call(%outputEvent,%client);
+				%obj.Custom_Call(%outputEvent,%client);
 		if(%parCount == 1)
-				%obj.call(%outputEvent,%par1,%client);
+				%obj.Custom_Call(%outputEvent,%par1,%client);
 		if(%parCount == 2)
-				%obj.call(%outputEvent,%par1,%par2,%client);
+				%obj.Custom_Call(%outputEvent,%par1,%par2,%client);
 		if(%parCount == 3)
-				%obj.call(%outputEvent,%par1,%par2,%par3,%client);
+				%obj.Custom_Call(%outputEvent,%par1,%par2,%par3,%client);
 		if(%parCount == 4)
-				%obj.call(%outputEvent,%par1,%par2,%par3,%par4,%client);	
+				%obj.Custom_Call(%outputEvent,%par1,%par2,%par3,%par4,%client);	
 	}
 	else
 	{
 		if(%parCount == 0)
-			%obj.call(%outputEvent);
+			%obj.Custom_Call(%outputEvent);
 		if(%parCount == 1)
-			%obj.call(%outputEvent,%par1);
+			%obj.Custom_Call(%outputEvent,%par1);
 		if(%parCount == 2)
-			%obj.call(%outputEvent,%par1,%par2);
+			%obj.Custom_Call(%outputEvent,%par1,%par2);
 		if(%parCount == 3)
-			%obj.call(%outputEvent,%par1,%par2,%par3);
+			%obj.Custom_Call(%outputEvent,%par1,%par2,%par3);
 		if(%parCount == 4)
-			%obj.call(%outputEvent,%par1,%par2,%par3,%par4);	
+			%obj.Custom_Call(%outputEvent,%par1,%par2,%par3,%par4);	
 	}
 }
 package VCE_Main

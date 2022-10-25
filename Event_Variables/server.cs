@@ -241,6 +241,10 @@ function VCE_initServer()
 	VCE_updateSaveFile();
 }
 //---
+// CustomCall function
+//---
+exec("./server/customcall.cs");
+//---
 // Package
 //---
 exec("./server/package.cs");
